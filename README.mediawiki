@@ -23,7 +23,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Multi-Sig Transaction Distribution
 | Alan Reiner
 | Informational
-| Draft
+| Withdrawn
 |- style="background-color: #cfffcf"
 | [[bip-0011.mediawiki|11]]
 | M-of-N Standard Transactions
@@ -53,19 +53,19 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Aliases
 | Amir Taaki
 | Standard
-| Withdrawn
+| Deferred
 |- style="background-color: #cfffcf"
 | [[bip-0016.mediawiki|16]]
 | Pay To Script Hash
 | Gavin Andresen
 | Standard
-| Accepted
+| Final
 |- style="background-color: #ffcfcf"
 | [[bip-0017.mediawiki|17]]
 | OP_CHECKHASHVERIFY (CHV)
 | Luke Dashjr
+| Standard
 | Withdrawn
-| Draft
 |-
 | [[bip-0018.mediawiki|18]]
 | hashScriptCheck
@@ -107,7 +107,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Duplicate transactions
 | Pieter Wuille
 | Standard
-| Accepted
+| Final
 |- style="background-color: #cfffcf"
 | [[bip-0031.mediawiki|31]]
 | Pong message
@@ -193,6 +193,18 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Standard
 | Draft
 |-
+| [[bip-0045.mediawiki|45]]
+| Structure for Deterministic P2SH Multisignature Wallets
+| Manuel Araoz
+| Standard
+| Draft
+|-
+| [[bip-0047.mediawiki|47]]
+| Reusable Payment Codes for Hierarchical Deterministic Wallets
+| Justus Ranvier
+| Informational
+| Draft
+|-
 | [[bip-0050.mediawiki|50]]
 | March 2013 Chain Fork Post-Mortem
 | Gavin Andresen
@@ -210,7 +222,7 @@ Those proposing changes should consider that ultimately consent may rest with th
 | "reject" P2P message
 | Gavin Andresen
 | Standard
-| Draft
+| Final
 |-
 | [[bip-0062.mediawiki|62]]
 | Dealing with malleability
@@ -230,27 +242,87 @@ Those proposing changes should consider that ultimately consent may rest with th
 | Standard
 | Draft
 |-
+| [[bip-0065.mediawiki|65]]
+| OP_CHECKLOCKTIMEVERIFY
+| Peter Todd
+| Standard
+| Draft
+|-
+| [[bip-0066.mediawiki|66]]
+| Strict DER signatures
+| Pieter Wuille
+| Standard
+| Draft
+|-
+| [[bip-0067.mediawiki|67]]
+| Deterministic P2SH multi-signature addresses
+| Thomas Kerin
+| Standard
+| Draft
+|-
+| [[bip-0068.mediawiki|68]]
+| Consensus-enforced transaction replacement signalled via sequence numbers
+| Mark Friedenbach
+| Standard
+| Draft
+|-
 | [[bip-0070.mediawiki|70]]
 | Payment protocol
 | Gavin Andresen
 | Standard
-| Draft
+| Final
 |-
 | [[bip-0071.mediawiki|71]]
 | Payment protocol MIME types
 | Gavin Andresen
 | Standard
-| Draft
+| Final
 |-
 | [[bip-0072.mediawiki|72]]
 | Payment protocol URIs
 | Gavin Andresen
 | Standard
-| Draft
+| Final
 |-
 | [[bip-0073.mediawiki|73]]
 | Use "Accept" header with Payment Request URLs
 | Stephen Pair
+| Standard
+| Draft
+|-
+| [[bip-0101.mediawiki|101]]
+| Increase maximum block size
+| Gavin Andresen
+| Standard
+| Draft
+|-
+| [[bip-0105.mediawiki|105]]
+| Consensus based block size retargeting algorithm
+| BtcDrak
+| Standard
+| Draft
+|-
+| [[bip-0111.mediawiki|111]]
+| NODE_BLOOM service bit
+| Matt Corallo and Peter Todd
+| Standard
+| Draft
+|-
+| [[bip-0113.mediawiki|113]]
+| Median time-past as endpoint for lock-time calculations
+| Thomas Kerin and Mark Friedenbach
+| Standard
+| Draft
+|-
+| [[bip-0120.mediawiki|120]]
+| Proof of Payment
+| Kalle Rosenbaum
+| Standard
+| Draft
+|-
+| [[bip-0121.mediawiki|121]]
+| Proof of Payment URI scheme
+| Kalle Rosenbaum
 | Standard
 | Draft
 |}
