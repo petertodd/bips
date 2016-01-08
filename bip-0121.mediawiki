@@ -68,11 +68,11 @@ following table:
 {|
 | <tt>btcpop:</tt> URI parameter || <tt>bitcoin:</tt> URI parameter || BIP70 PaymentDetails data
 |-
-| <tt>label</tt>                 || <tt>label</tt>                  || <tt>merchant_data</tt>
+| <tt>label</tt>                 || <tt>label</tt>                  || <tt>memo</tt>
 |-
 | <tt>amount</tt>                || <tt>amount</tt>                 || <tt>sum of outputs.amount</tt>
 |-
-| <tt>message</tt>               || <tt>message</tt>                || <tt>memo</tt>
+| <tt>message</tt>               || <tt>message</tt>                || <tt>-</tt>
 |}
 
 The <tt>txid</tt> parameter value must match the transaction hash of
@@ -98,16 +98,15 @@ The <tt>p</tt> parameter value is the destination where to send the
 PoP to. This destination is typically a <tt>https:</tt> URL or a
 <tt>http:</tt> URL, but it could be any type of URI, for example
 <tt>mailto:</tt>. To keep <tt>btcpop:</tt> URIs short, users should
-not make their <tt>p</tt> parameter unneccesarily long.
+not make their <tt>p</tt> parameter unnecessarily long.
 
 ==== <tt>http:</tt> and <tt>https:</tt> URLs ====
 
 Wallet implementations must support the <tt>http:</tt> and
 <tt>https:</tt> schemes in which case <tt>POST</tt> method must be
-used. The content type of the POST request must be set to
-
- Content-Type: application/bitcoin-pop
- Content-Transfer-Encoding: binary
+used. The PoP is sent as a binary serialized transaction. The content
+type of the POST request must be set to
+<tt>application/bitcoin-pop</tt>
 
 == Examples ==
 
@@ -115,7 +114,7 @@ Send PoP for a transaction with label "video 42923" to
 <nowiki>https://www.example.com/pop/352</nowiki>, using nonce
 <tt>0x73 0xd5 0x1a 0xbb 0xd8 0x9c</tt>:
 <pre>
- btcpop:?p=https://www.example.com/pop/352&n=zgWTm8yH&label=video 42923
+ btcpop:?p=https://www.example.com/pop/352&n=zgWTm8yH&label=video%2042923
 </pre>
 Send PoP through mail using
 <nowiki>mailto:pop@example.com?subject=pop444</nowiki>, amount
